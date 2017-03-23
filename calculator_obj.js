@@ -1,13 +1,11 @@
-var calc1 = new calculator();
-
-function calculator() {
+function Calculator() {
     this.currentInput = "0";
     this.memory = "0";
     this.operator = 0;
     this.sto = "0"
     this.angleMode = 0;
     this.displayCurrentInput = displayCurrentInput();
-    this.addDigit = addDigit();
+    this.addDigit = addDigit(dig);
 
     function displayCurrentInput() {
         document.getElementById('screen').value = this.currentInput;
