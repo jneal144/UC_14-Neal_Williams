@@ -17,37 +17,37 @@
         <p>
             <input readonly type="text" style="text-align: right" id="screen"> </p>
         <p>
-            <button type="button" class="btn btn-danger" onclick="allClear()">AC</button>
-            <button type="button" class="btn btn-danger" onclick="clear()">C</button>
-            <button type="button" class="btn btn-success" onclick="changeSign()">+/-</button>
-            <button type="button" class="btn btn-warning" onclick="percentage()">%</button>
-            <button type="button" class="btn btn-warning" onclick="storeOperator('^')">^</button>
+            <button type="button" class="btn btn-danger" onclick="calc1.allClear()">AC</button>
+            <button type="button" class="btn btn-danger" onclick="calc1.clear()">C</button>
+            <button type="button" class="btn btn-success" onclick="calc1.changeSign()">+/-</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.percentage()">%</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.storeOperator('^')">^</button>
         </p>
         <p>
-            <button type="button" class="btn btn-warning" onclick="memoryStore()">ms</button>
-            <button type="button" class="btn btn-warning" onclick="memoryRecall()">mr</button>
-            <button type="button" class="btn btn-warning" onclick="memoryAdd()">m+</button>
-            <button type="button" class="btn btn-warning" onclick="memorySub()">m-</button>
-            <button type="button" class="btn btn-warning" onclick="setPi()">&#960;</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.memoryStore()">ms</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.memoryRecall()">mr</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.memoryAdd()">m+</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.memorySub()">m-</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.setPi()">&#960;</button>
         </p>
         <p>
-            <button type="button" class="btn btn-warning" onclick=angleMode()>deg</button>
+            <button type="button" class="btn btn-warning" onclick=calc1.angleMode()>deg</button>
             <button type="button" class="btn btn-warning" onclick="calc1.sine()">sin</button>
-            <button type="button" class="btn btn-warning" onclick="cosine()">cos</button>
-            <button type="button" class="btn btn-warning" onclick="tangent()">tan</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.cosine()">cos</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.tangent()">tan</button>
         </p>
         <p>
             <button type="button" class="btn btn-primary" onclick="calc1.addDigit('7')">7</button>
             <button type="button" class="btn btn-primary" onclick="calc1.addDigit('8')">8</button>
             <button type="button" class="btn btn-primary" onclick="calc1.addDigit('9')">9</button>
             <button type="button" class="btn btn-success" onclick="calc1.storeOperator('+')">+</button>
-            <button type="button" class="btn btn-warning" onclick="square()">x^2</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.square()">x^2</button>
         </p>
         <p>
             <button type="button" class="btn btn-primary" onclick="calc1.addDigit('4')">4</button>
             <button type="button" class="btn btn-primary" onclick="calc1.addDigit('5')">5</button>
             <button type="button" class="btn btn-primary" onclick="calc1.addDigit('6')">6</button>
-            <button type="button" class="btn btn-success" onclick="storeOperator('-')">-</button>
+            <button type="button" class="btn btn-success" onclick="calc1.storeOperator('-')">-</button>
             <button type="button" class="btn btn-warning" onclick="calc1.squareRoot()">&#8730;x</button>
         </p>
         <p>
@@ -55,14 +55,14 @@
             <button type="button" class="btn btn-primary" onclick="calc1.addDigit('2')">2</button>
             <button type="button" class="btn btn-primary" onclick="calc1.addDigit('3')">3</button>
             <button type="button" class="btn btn-success" onclick="calc1.storeOperator('*')">x</button>
-            <button type="button" class="btn btn-warning" onclick="factorial()">x!</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.factorial()">x!</button>
         </p>
         <p>
             <button type="button" class="btn btn-primary" onclick="addDigit('0')">0</button>
-            <button type="button" class="btn btn-primary" onclick="addDecimal()">. </button>
-            <button type="button" class="btn btn-info" onclick="calculate()">=</button>
-            <button type="button" class="btn btn-success" onclick="storeOperator('/')">/</button>
-            <button type="button" class="btn btn-warning" onclick="inverse()">inv</button>
+            <button type="button" class="btn btn-primary" onclick="calc1.addDecimal()">. </button>
+            <button type="button" class="btn btn-info" onclick="calc1.calculate()">=</button>
+            <button type="button" class="btn btn-success" onclick="calc1.storeOperator('/')">/</button>
+            <button type="button" class="btn btn-warning" onclick="calc1.inverse()">inv</button>
         </p>
     </form>
 </body>
