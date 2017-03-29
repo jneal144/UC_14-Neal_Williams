@@ -67,9 +67,9 @@ function addDecimal() {
  * Clears calculator memory and current input.
  */
 function allClear() {
-    this.current_input = "0";
+    this.currentInput = "0";
+    this.memory = "0"
     this.operator = 0;
-    this.memory = "0";
     this.displayCurrentInput();
 }
 /**
@@ -101,19 +101,19 @@ function storeOperator(op) {
  */
 function calculate() {
     if (this.operator == 1) {
-        this.currentInput = eval(memory) * eval(this.currentInput); //multiply
+        this.currentInput = eval(this.memory) * eval(this.currentInput); //multiply
     };
     if (this.operator == 2) {
-        this.currentInput = eval(memory) / eval(this.currentInput); //divide
+        this.currentInput = eval(this.memory) / eval(this.currentInput); //divide
     };
     if (this.operator == 3) {
-        this.currentInput = eval(memory) + eval(this.currentInput); //add
+        this.currentInput = eval(this.memory) + eval(this.currentInput); //add
     };
     if (this.operator == 4) {
-        this.currentInput = eval(memory) - eval(this.currentInput); //subtract
+        this.currentInput = eval(this.memory) - eval(this.currentInput); //subtract
     };
     if (this.operator == 5) {
-        this.currentInput = Math.pow((eval(memory)), (eval(this.currentInput))); //raise to power
+        this.currentInput = Math.pow((eval(this.memory)), (eval(this.currentInput))); //raise to power
     }
     this.operator = 0;
     this.memory = "0";
